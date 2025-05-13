@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tns="http://ferremas.cl/ws-pedido">
+  <soap:Body>
+    <tns:CrearPedidoResponse>
+      <tns:exito>true</tns:exito>
+      <tns:mensaje>Pedido creado exitosamente</tns:mensaje>
+      <tns:id>1</tns:id>
+      <tns:numero_pedido>PED-250512-0001</tns:numero_pedido>
+    </tns:CrearPedidoResponse>
+  </soap:Body>
+</soap:Envelope>

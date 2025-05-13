@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test SOAP Básico</title>
+    <style>
+        body { font-family: Arial; padding: 20px; max-width: 800px; margin: 0 auto; }
+        h1 { color: #2c3e50; }
+        button { padding: 10px 15px; background: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer; margin: 10px 0; }
+        pre { background: #f8f9fa; padding: 15px; border-left: 3px solid #3498db; overflow: auto; max-height: 500px; }
+        .success { color: #27ae60; }
+        .error { color: #e74c3c; }
+    </style>
+</head>
+<body>
+    <h1>Test SOAP - WS-Pedido</h1>
+    
+    <div>
+        <h2>Verificar WSDL</h2>
+        <button id="check-wsdl">Obtener WSDL</button>
+        <div id="wsdl-result"></div>
+    </div>
+    
+    <div>
+        <h2>Probar CrearPedido</h2>
+        <button id="crear-pedido">Crear Pedido de Prueba</button>
+        <div id="crear-result"></div>
+    </div>
+    
+    <script>
+        // Verificar WSDL
+        document.getElementById('check-wsdl').addEventListener('click', async () => {
+            const resultDiv = document.getElementById('wsdl-result');
+            resultDiv.innerHTML = "Verificando WSDL...";
+            
+            try {
+                const response = await fetch('/ws-pedido?wsdl');
+                const text = await response.text();
+                
+                if (response.ok && text.includes('wsdl:definitions')) {
+                    resultDiv.innerHTML = "<p class='success'>✅ WSDL disponible correctamente</p>";
+                    resultDiv.innerHTML += "<pre>" + text.substring(0, 300).replace(/</g, "&lt;").replace(/>/g, "&gt;") + "...</pre>";
+                } else {
+                    resultDiv.innerHTML = "<p class='error'>❌ Error al obtener WSDL</p>";
+                    resultDiv.innerHTML += "<pre>" + text.replace(/</g, "&lt;").replace(/>/g, "&gt;") + "</pre>";
+                }
+            } catch (error) {
+                resultDiv.innerHTML = "<p class='error'>❌ Error: " + error.message + "</p>";
+            }
+        });
+        
+        // Crear pedido
+        document.getElementById('crear-pedido').addEventListener('click', async () => {
+            const resultDiv = document.getElementById('crear-result');
+            resultDiv.innerHTML = "Enviando solicitud SOAP...";
+            
+            const soapRequest = `<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tns="http://ferremas.cl/ws-pedido">
+  <soap:Body>
+    <tns:CrearPedidoRequest>
+      <tns:usuario_id>1</tns:usuario_id>
+      <tns:total>31.98</tns:total>
+      <tns:costo_envio>10.00</tns:costo_envio>
+      <tns:total_final>41.98</tns:total_final>
+      <tns:metodo_pago>webpay</tns:metodo_pago>
+      <tns:tipo_entrega>despacho</tns:tipo_entrega>
+      <tns:direccion_entrega>Av Principal 123</tns:direccion_entrega>
+      <tns:comuna_entrega>Santiago</tns:comuna_entrega>
+      <tns:ciudad_entrega>Santiago</tns:ciudad_entrega>
+      <tns:region_entrega>Metropolitana</tns:region_entrega>
+      <tns:detalles>
+        <tns:detalle>
+          <tns:producto_id>1</tns:producto_id>
+          <tns:nombre_producto>Martillo de Carpintero</tns:nombre_producto>
+          <tns:cantidad>2</tns:cantidad>
+          <tns:precio_unitario>15.99</tns:precio_unitario>
+        </tns:detalle>
+      </tns:detalles>
+    </tns:CrearPedidoRequest>
+  </soap:Body>
+</soap:Envelope>`;
+            
+            try {
+                const response = await fetch('/ws-pedido', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'text/xml',
+                        'SOAPAction': 'http://ferremas.cl/ws-pedido/CrearPedido'
+                    },
+                    body: soapRequest
+                });
+                
+                const text = await response.text();
+                
+                if (response.ok) {
+                    if (text.includes('CrearPedidoResponse')) {
+                        resultDiv.innerHTML = "<p class='success'>✅ Pedido creado exitosamente</p>";
+                    } else {
+                        resultDiv.innerHTML = "<p class='error'>❌ Respuesta recibida pero formato incorrecto</p>";
+                    }
+                } else {
+                    resultDiv.innerHTML = "<p class='error'>❌ Error HTTP: " + response.status + "</p>";
+                }
+                
+                resultDiv.innerHTML += "<pre>" + text.replace(/</g, "&lt;").replace(/>/g, "&gt;") + "</pre>";
+            } catch (error) {
+                resultDiv.innerHTML = "<p class='error'>❌ Error: " + error.message + "</p>";
+            }
+        });
+    </script>
+</body>
+</html>

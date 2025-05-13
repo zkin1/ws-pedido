@@ -1,0 +1,81 @@
+2025-05-12 18:04:57 info: Comprobando conexiones a las bases de datos...
+2025-05-12 18:04:57 info: Conexión a base de datos de pedidos establecida correctamente
+2025-05-12 18:04:57 info: Conexión a base de datos de inventario establecida correctamente
+2025-05-12 18:18:51 info: Comprobando conexiones a las bases de datos...
+2025-05-12 18:18:51 info: Conexión a base de datos de pedidos establecida correctamente
+2025-05-12 18:18:51 info: Conexión a base de datos de inventario establecida correctamente
+2025-05-12 18:18:51 info: Servidor HTTP iniciado en el puerto 8004
+2025-05-12 18:18:51 info: Servidor SOAP iniciado en: /ws-pedido
+2025-05-12 18:18:51 info: WSDL disponible en: /ws-pedido?wsdl
+2025-05-12 18:18:51 error: Error no capturado: _this_1.callback is not a function
+2025-05-12 18:18:51 info: Servidor WS-Pedido iniciado correctamente
+2025-05-12 18:23:40 info: Comprobando conexiones a las bases de datos...
+2025-05-12 18:23:40 info: Conexión a base de datos de pedidos establecida correctamente
+2025-05-12 18:23:40 info: Conexión a base de datos de inventario establecida correctamente
+2025-05-12 18:23:40 info: Servidor HTTP iniciado en el puerto 8004
+2025-05-12 18:23:40 info: Archivo WSDL creado en: C:\Users\zkn\Desktop\ws-pedido\services\soap\wsdl-file.xml
+2025-05-12 18:23:40 info: Servidor SOAP iniciado en: /ws-pedido
+2025-05-12 18:23:40 info: WSDL disponible en: /ws-pedido?wsdl
+2025-05-12 18:23:40 info: Servidor WS-Pedido iniciado correctamente
+2025-05-12 18:30:20 info: Comprobando conexiones a las bases de datos...
+2025-05-12 18:30:20 info: Conexión a base de datos de pedidos establecida correctamente
+2025-05-12 18:30:20 info: Conexión a base de datos de inventario establecida correctamente
+2025-05-12 18:30:20 info: Servidor HTTP iniciado en el puerto 8004
+2025-05-12 18:30:20 info: Servidor SOAP iniciado en: /ws-pedido
+2025-05-12 18:30:20 info: WSDL disponible en: /ws-pedido?wsdl
+2025-05-12 18:30:20 info: Servidor WS-Pedido iniciado correctamente
+2025-05-12 18:36:39 info: Comprobando conexiones a las bases de datos...
+2025-05-12 18:36:39 info: Conexión a base de datos de pedidos establecida correctamente
+2025-05-12 18:36:39 info: Conexión a base de datos de inventario establecida correctamente
+2025-05-12 18:36:39 info: Servidor HTTP iniciado en el puerto 8004
+2025-05-12 18:36:39 info: Servidor SOAP iniciado en: /ws-pedido
+2025-05-12 18:36:39 info: WSDL disponible en: /ws-pedido?wsdl
+2025-05-12 18:36:39 info: Servidor WS-Pedido iniciado correctamente
+2025-05-12 18:41:00 info: Comprobando conexiones a las bases de datos...
+2025-05-12 18:41:00 info: Conexión a base de datos de pedidos establecida correctamente
+2025-05-12 18:41:00 info: Conexión a base de datos de inventario establecida correctamente
+2025-05-12 18:41:00 info: Servidor HTTP iniciado en el puerto 8004
+2025-05-12 18:41:00 info: Servidor SOAP iniciado en: /ws-pedido
+2025-05-12 18:41:00 info: WSDL disponible en: /ws-pedido?wsdl
+2025-05-12 18:41:00 info: Servidor WS-Pedido iniciado correctamente
+2025-05-12 18:55:24 info: Comprobando conexiones a las bases de datos...
+2025-05-12 18:55:24 info: Conexión a base de datos de pedidos establecida correctamente
+2025-05-12 18:55:24 info: Conexión a base de datos de inventario establecida correctamente
+2025-05-12 18:55:24 info: Servidor HTTP iniciado en el puerto 8004
+2025-05-12 18:55:24 info: Servidor SOAP iniciado en: /ws-pedido
+2025-05-12 18:55:24 info: WSDL disponible en: /ws-pedido?wsdl
+2025-05-12 18:55:24 info: Servidor WS-Pedido iniciado correctamente
+2025-05-12 18:55:31 info: WSDL enviado al cliente
+2025-05-12 18:55:31 info: Solicitud SOAP recibida
+2025-05-12 18:55:31 info: Operación solicitada: CrearPedido
+2025-05-12 18:55:31 info: Respuesta SOAP enviada
+2025-05-12 19:02:40 info: Comprobando conexiones a las bases de datos...
+2025-05-12 19:02:40 info: Conexión a base de datos de pedidos establecida correctamente
+2025-05-12 19:02:40 info: Conexión a base de datos de inventario establecida correctamente
+2025-05-12 19:02:40 info: Servidor HTTP iniciado en el puerto 8004
+2025-05-12 19:02:40 info: Servidor SOAP iniciado en: /ws-pedido
+2025-05-12 19:02:40 info: WSDL disponible en: /ws-pedido?wsdl
+2025-05-12 19:02:40 info: Servidor WS-Pedido iniciado correctamente
+2025-05-12 19:02:47 info: WSDL enviado al cliente
+2025-05-12 19:02:47 info: Solicitud SOAP recibida
+2025-05-12 19:02:47 info: Operación solicitada: CrearPedido
+2025-05-12 19:02:47 info: Respuesta SOAP enviada
+2025-05-12 19:06:08 info: WSDL enviado al cliente
+2025-05-12 19:06:08 info: Solicitud SOAP recibida
+2025-05-12 19:06:08 info: Operación solicitada: CrearPedido
+2025-05-12 19:06:08 info: Respuesta SOAP enviada
+2025-05-12 19:06:08 info: Solicitud SOAP recibida
+2025-05-12 19:06:08 info: Operación solicitada: ConsultarPedido
+2025-05-12 19:06:08 info: Respuesta SOAP enviada
+2025-05-12 19:06:08 info: Solicitud SOAP recibida
+2025-05-12 19:06:08 info: Operación solicitada: ConsultarPedido
+2025-05-12 19:06:08 info: Respuesta SOAP enviada
+2025-05-12 19:06:08 info: Solicitud SOAP recibida
+2025-05-12 19:06:08 info: Operación solicitada: ActualizarEstadoPedido
+2025-05-12 19:06:08 info: Respuesta SOAP enviada
+2025-05-12 19:06:08 info: Solicitud SOAP recibida
+2025-05-12 19:06:08 info: Operación solicitada: ConsultarPedidosPorUsuario
+2025-05-12 19:06:08 info: Respuesta SOAP enviada
+2025-05-12 19:06:08 info: Solicitud SOAP recibida
+2025-05-12 19:06:08 info: Operación solicitada: ConsultarPedidosPorEstado
+2025-05-12 19:06:08 info: Respuesta SOAP enviada
