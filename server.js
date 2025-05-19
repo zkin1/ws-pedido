@@ -10,6 +10,20 @@ const config = require('./config/env.config');
 // Crear la aplicación Express
 const app = express();
 
+// Middleware para CORS
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*'); // Permite cualquier origen (puedes limitarlo a http://localhost:3002)
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, SOAPAction');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  
+  // Manejar solicitudes preflight OPTIONS
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
+  }
+  
+  next();
+});
+
 // Middleware para procesar solicitudes SOAP
 app.use(bodyParser.raw({ 
     type: function() { return true; }, 

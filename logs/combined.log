@@ -79,3 +79,67 @@
 2025-05-12 19:06:08 info: Solicitud SOAP recibida
 2025-05-12 19:06:08 info: Operación solicitada: ConsultarPedidosPorEstado
 2025-05-12 19:06:08 info: Respuesta SOAP enviada
+2025-05-19 13:38:44 info: Comprobando conexiones a las bases de datos...
+2025-05-19 13:38:44 error: Error al conectar a las bases de datos: Access denied for user 'root'@'localhost' (using password: YES)
+2025-05-19 13:39:14 info: Comprobando conexiones a las bases de datos...
+2025-05-19 13:39:15 error: Error al conectar a las bases de datos: Unknown database 'ws_pedido_db'
+2025-05-19 13:41:11 info: Comprobando conexiones a las bases de datos...
+2025-05-19 13:41:11 info: Conexión a base de datos de pedidos establecida correctamente
+2025-05-19 13:41:11 info: Conexión a base de datos de inventario establecida correctamente
+2025-05-19 13:41:11 info: Servidor HTTP iniciado en el puerto 8004
+2025-05-19 13:41:11 info: Servidor SOAP iniciado en: /ws-pedido
+2025-05-19 13:41:11 info: WSDL disponible en: /ws-pedido?wsdl
+2025-05-19 13:41:11 info: Servidor WS-Pedido iniciado correctamente
+2025-05-19 13:41:45 info: WSDL enviado al cliente
+2025-05-19 13:41:48 info: WSDL enviado al cliente
+2025-05-19 13:43:14 info: WSDL enviado al cliente
+2025-05-19 13:43:18 info: WSDL enviado al cliente
+2025-05-19 14:26:43 info: WSDL enviado al cliente
+2025-05-19 14:26:49 info: WSDL enviado al cliente
+2025-05-19 14:54:50 info: WSDL enviado al cliente
+2025-05-19 15:13:50 info: Comprobando conexiones a las bases de datos...
+2025-05-19 15:13:50 info: Conexión a base de datos de pedidos establecida correctamente
+2025-05-19 15:13:50 info: Conexión a base de datos de inventario establecida correctamente
+2025-05-19 15:13:50 info: Servidor HTTP iniciado en el puerto 8004
+2025-05-19 15:13:50 info: Servidor SOAP iniciado en: /ws-pedido
+2025-05-19 15:13:50 info: WSDL disponible en: /ws-pedido?wsdl
+2025-05-19 15:13:50 info: Servidor WS-Pedido iniciado correctamente
+2025-05-19 15:14:01 info: Solicitud SOAP recibida
+2025-05-19 15:14:01 info: Operación solicitada: ConsultarPedido
+2025-05-19 15:14:01 info: Respuesta SOAP enviada
+2025-05-19 15:14:01 info: Solicitud SOAP recibida
+2025-05-19 15:14:01 info: Operación solicitada: ConsultarPedidosPorUsuario
+2025-05-19 15:14:01 info: Respuesta SOAP enviada
+2025-05-19 15:19:56 info: Solicitud SOAP recibida
+2025-05-19 15:19:56 info: Operación solicitada: ConsultarPedido
+2025-05-19 15:19:56 info: Respuesta SOAP enviada
+2025-05-19 15:19:56 info: Solicitud SOAP recibida
+2025-05-19 15:19:56 info: Operación solicitada: ConsultarPedidosPorUsuario
+2025-05-19 15:19:56 info: Respuesta SOAP enviada
+2025-05-19 15:20:13 info: Solicitud SOAP recibida
+2025-05-19 15:20:13 info: Operación solicitada: ConsultarPedido
+2025-05-19 15:20:13 info: Respuesta SOAP enviada
+2025-05-19 15:20:13 info: Solicitud SOAP recibida
+2025-05-19 15:20:13 info: Operación solicitada: ConsultarPedidosPorUsuario
+2025-05-19 15:20:13 info: Respuesta SOAP enviada
+2025-05-19 15:20:32 info: Solicitud SOAP recibida
+2025-05-19 15:20:32 info: Operación solicitada: ConsultarPedido
+2025-05-19 15:20:32 info: Respuesta SOAP enviada
+2025-05-19 15:20:32 info: Solicitud SOAP recibida
+2025-05-19 15:20:32 info: Operación solicitada: ConsultarPedidosPorUsuario
+2025-05-19 15:20:32 info: Respuesta SOAP enviada
+2025-05-19 15:20:50 info: Solicitud SOAP recibida
+2025-05-19 15:20:50 info: Operación solicitada: ConsultarPedido
+2025-05-19 15:20:50 info: Respuesta SOAP enviada
+2025-05-19 15:20:50 info: Solicitud SOAP recibida
+2025-05-19 15:20:50 info: Operación solicitada: ConsultarPedidosPorUsuario
+2025-05-19 15:20:50 info: Respuesta SOAP enviada
+2025-05-19 15:20:52 info: Solicitud SOAP recibida
+2025-05-19 15:20:52 info: Operación solicitada: ConsultarPedido
+2025-05-19 15:20:52 info: Respuesta SOAP enviada
+2025-05-19 15:21:11 info: Solicitud SOAP recibida
+2025-05-19 15:21:11 info: Operación solicitada: ConsultarPedido
+2025-05-19 15:21:11 info: Respuesta SOAP enviada
+2025-05-19 15:21:11 info: Solicitud SOAP recibida
+2025-05-19 15:21:11 info: Operación solicitada: ConsultarPedidosPorUsuario
+2025-05-19 15:21:12 info: Respuesta SOAP enviada
